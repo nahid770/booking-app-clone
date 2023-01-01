@@ -4,3 +4,48 @@
     gap: 10px;
     align-items: center;
 }
+.headerSearch{
+    border: 4px solid #FEBB02;
+    position: absolute;
+    bottom: -25px;
+    width:100%;
+    max-width: 1024px;
+   
+    
+}
+.date{
+    position: absolute;
+    top: 60px;
+    right: 350px;
+
+}
+.options{
+    position: absolute;
+    top: 60px;
+    right: 150px;
+
+}
+.optionItem{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    
+}
+.optionCounterBtn{
+    padding: 5px 12px;
+    margin: 5px;
+    border: 1px solid #0071C2;
+    color: #0071C2;
+}
+.optionCounterBtn:hover{
+    background-color: #F0F7FB;
+}
+.optionCounterBtn:disabled{
+    cursor: not-allowed;
+}
