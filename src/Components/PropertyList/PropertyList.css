@@ -1,0 +1,16 @@
+.pList{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.pListImg{
+    margin-bottom: 10px;
+}
+.pList-item {
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+}
+

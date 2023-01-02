@@ -7,7 +7,7 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { format} from 'date-fns'
 import './Header.css'
 
-const Header = () => {
+const Header = ({type}) => {
     const [openDate, setOpenDate] = useState(false)
     const [date, setDate] = useState([
         {
@@ -31,7 +31,7 @@ const Header = () => {
 
     return (
         <div className='bg-[#003580] relative'>
-            <div className='mx-32  pt-2 pb-20 flex justify-start items-center'>
+            <div className={type === "list" ? 'mx-32 pb-4 pt-2 flex justify-start items-center' : 'mx-32  pt-2 pb-20 flex justify-start items-center' }>
             <div className="flex gap-8">
             <div className='headerListItem p-3 border rounded-full bg-slate-300 bg-opacity-10'>
             <FontAwesomeIcon icon={faBed} />
@@ -56,7 +56,10 @@ const Header = () => {
             </div>
             </div>
             {/* Header Title */}
+            { type !== "list" &&
+            <>
             <div className='mx-32'>
+            
             <h2 className='text-white text-5xl font-bold pb-2'>Find your next stay</h2>
             <p className='text-2xl text-white pb-20'>Search deals on hotels, homes, and much more...</p>
             </div>
@@ -134,10 +137,10 @@ const Header = () => {
                 </div>
 
                 <div>
-               <button className='bg-blue-500 px-6 py-2'>Search</button>
+                    <button className='bg-blue-500 hover:bg-[#003580] text-white text-xl px-6 py-2'>Search</button>
                 </div>
-            </div>
-            </div>
+            </div> 
+            </div> </>}
         </div>
     );
 };

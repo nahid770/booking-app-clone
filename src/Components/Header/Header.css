@@ -17,12 +17,16 @@
     position: absolute;
     top: 60px;
     right: 350px;
+    z-index: 2;
 
 }
 .options{
     position: absolute;
     top: 60px;
     right: 150px;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 5px;
 
 }
 .optionItem{

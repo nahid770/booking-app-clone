@@ -1,0 +1,78 @@
+
+
+.ebangladesh{
+    width: 100%;
+    max-width: 1024px;
+}
+.exploreImg{
+width: 502px;
+}
+
+
+.exploreImage{
+    width: 100%;
+    max-width: 1024px;
+    
+    
+}
+.titleOne{
+    position: absolute;
+    top: -260px;
+    left: 20px;
+   
+}
+.flagOne{
+    position: absolute;
+    top: -253px;
+    left: 155px;
+}
+.titleTwo{
+    position: absolute;
+    top: -260px;
+    left: 20px;
+   
+}
+.flagTwo{
+    position: absolute;
+    top: -253px;
+    left: 100px;
+}
+.titleThree{
+    position: absolute;
+    top: -305px;
+    left: 20px;
+}
+.imgThree{
+    position: absolute;
+    top: -298px;
+    left: 153px;
+}
+.imgfour{
+    position: absolute;
+    top: -298px;
+    left: 100px;
+}
+.imgFive{
+    position: absolute;
+    top: -298px;
+    left: 112px;
+}
+
+.dealsBox{
+    height: 52px;
+    width: 110px;
+    padding: 3px;
+    padding-top: 2px;
+}
+
+.dealsBox{
+    position: absolute;
+    top: 180px;
+    left: 380px;
+}
+
+.dealsBox3{
+    position: absolute;
+    top: 220px;
+    left: 206px;
+}

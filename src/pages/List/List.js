@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from '../../Components/Header/Header';
+import Navber from '../../Components/Navber/Navber';
 
 const List = () => {
     return (
         <div>
-            <h4 >Booking </h4>
+            <Navber type="list"></Navber>
+            <Header type="list"></Header>
         </div>
     );
 };
