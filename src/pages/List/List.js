@@ -6,6 +6,7 @@ import { DateRange } from 'react-date-range';
 import { useLocation } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import Navber from '../../Components/Navber/Navber';
+import SearchItem from '../../Components/SearchItem/SearchItem';
 import './List.css'
 
 const List = () => {
@@ -121,11 +122,14 @@ const List = () => {
                    </div>
 
                    {/* Search Button */}
-                   <button className='px-3 py-2 mb-4 w-full rounded-sm text-white text-xl bg-blue-600 hover:bg-[#00487A]'>Search</button>
+                   <button className='px-3 py-2 mb-4 w-full rounded-sm text-white bg-blue-600 hover:bg-[#00487A]'>Search</button>
                  </div>
                  {/* Search result properties */}
-                 <div className="listResult"></div>
-                </div>
+                 <div className="listResult">
+                    <SearchItem></SearchItem>
+                 </div>
+                 {/* Result End */}
+                 </div>
             </div>
         </div>
     );
