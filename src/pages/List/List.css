@@ -1,0 +1,78 @@
+.listContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.listWraper{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+}
+
+.listSearch{
+    flex: 1;
+    background-color: #FEBB02;
+    padding: 10px;
+    position: sticky;
+    top: 20px;
+}
+.listResult{
+    flex: 3;
+}
+
+.lsItem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.icon{
+   position: absolute;
+   top: 8px;
+   width: 30px;
+   height: 20px;
+   color: #3E3E3E;
+}
+.icon2{
+   position: absolute;
+   top: 8px;
+   left: 1px;
+   width: 30px;
+   height: 20px;
+   color: #3E3E3E; 
+}
+.date{
+ position: absolute;
+
+}
+.input-field{
+    border: 1px solid #0456c9;
+}
+
+.input-icon{
+    width: 100%;
+}
+
+.checkDateContainer{
+    border: 1px solid #0456c9;
+}
+.checkDate{
+    position: absolute;
+    left: -1px;
+    top: 40px;
+    z-index: 2;
+}
+
+.optionContainer{
+    border: 1px solid #0456c9;
+}
+
+.optionsInHotels{
+    position: absolute;
+    top: 40px;
+    left: -14px;
+    background-color: #fff;
+    z-index: 2;
+}

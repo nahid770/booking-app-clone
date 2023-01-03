@@ -6,8 +6,13 @@ import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { format} from 'date-fns'
 import './Header.css'
+import { useNavigate } from 'react-router-dom';
 
 const Header = ({type}) => {
+    const navigate = useNavigate();
+
+    const [destination, setdestination] = useState("");
+   
     const [openDate, setOpenDate] = useState(false)
     const [date, setDate] = useState([
         {
@@ -29,6 +34,12 @@ const Header = ({type}) => {
         }});
       };
 
+
+    //   handle Search
+    const handleSearch = () =>{
+        navigate('/hotels', {state: {destination, date, options}} );
+
+    }
     return (
         <div className='bg-[#003580] relative'>
             <div className={type === "list" ? ' hero pb-4 pt-2 flex justify-start items-center' : 'hero pt-2 pb-20 flex justify-start items-center' }>
@@ -69,7 +80,11 @@ const Header = ({type}) => {
             <div className='headerSearch  flex justify-around items-center bg-white h-16 ' >
                 <div>
                 <FontAwesomeIcon className='text-gray-400 pr-2' icon={faBed} />
-                <input className='text-black border-none outline-none' type="text" name="" id="" placeholder='Whare are you going?' />
+                <input 
+                className='text-black border-none outline-none' 
+                type="text" name="" id="" 
+                placeholder='Whare are you going?' 
+                onChange={e => setdestination(e.target.value)}/>
                 </div>
 
                 <div>
@@ -137,7 +152,7 @@ const Header = ({type}) => {
                 </div>
 
                 <div>
-                    <button className='bg-blue-500 hover:bg-[#003580] text-white text-xl px-6 py-2'>Search</button>
+                    <button className='bg-blue-500 hover:bg-[#003580] text-white text-xl px-6 py-2' onClick={handleSearch}>Search</button>
                 </div>
             </div> 
             </div> </>}
