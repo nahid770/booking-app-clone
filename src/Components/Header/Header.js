@@ -31,7 +31,7 @@ const Header = ({type}) => {
 
     return (
         <div className='bg-[#003580] relative'>
-            <div className={type === "list" ? 'mx-32 pb-4 pt-2 flex justify-start items-center' : 'mx-32  pt-2 pb-20 flex justify-start items-center' }>
+            <div className={type === "list" ? ' hero pb-4 pt-2 flex justify-start items-center' : 'hero pt-2 pb-20 flex justify-start items-center' }>
             <div className="flex gap-8">
             <div className='headerListItem p-3 border rounded-full bg-slate-300 bg-opacity-10'>
             <FontAwesomeIcon icon={faBed} />
@@ -58,7 +58,7 @@ const Header = ({type}) => {
             {/* Header Title */}
             { type !== "list" &&
             <>
-            <div className='mx-32'>
+            <div className='hero'>
             
             <h2 className='text-white text-5xl font-bold pb-2'>Find your next stay</h2>
             <p className='text-2xl text-white pb-20'>Search deals on hotels, homes, and much more...</p>
