@@ -14,3 +14,23 @@
     cursor: pointer;
 }
 
+.slide{
+    width: 100%;
+    max-width: 1024px;
+}
+
+
+.swiper-button-next::after{
+    width:10px;
+    height: 10px;
+   position: absolute;
+   bottom: 50px;
+   margin-right: 10px;
+   
+}
+.swiper-button-prev:after{
+    width: 10px;
+    height: 10px;
+   position: absolute;
+   bottom: 50px;
+}
